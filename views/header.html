@@ -1,0 +1,10 @@
+<div class="topbar">
+    
+        <!--<ul class="nav nav-pills">
+            <li ng-repeat="menu in navigation" class="{{menu.classis}}"><a href="{{menu.link}}">{{menu.name}}</a>
+            </li>
+        </ul>-->
+         <div class="col-xs-6 pull-right topbar ">
+          <span  ng-repeat="menu in navigation"><a  ng-class="menu.classis" href="{{menu.link}}">{{menu.name}}</a> {{menu.last}}</span>
+          </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="row headbar">
+    <div class="col-xs-2">
+        <img src="img/logo2.png" />
+    </div>
+    <div class="col-xs-6 mainmenu">
+        <!--<ul class="nav nav-pills">
+            <li ng-repeat="menu in mainnavigation" class="{{menu.classis}}"><a href="{{menu.link}}">{{menu.name}}</a> {{menu.last}}
+            </li>
+        </ul>-->
+        <span  ng-repeat="menu in mainnavigation"><a  ng-class="menu.classis" href="{{menu.link}}">{{menu.name}}</a> <span class="ontop">{{menu.last}}</span></span>
+    </div>
+    <div class="col-xs-1 col-xs-offset-2 socialicons">
+        <span>
+            <i class="fa fa-facebook-square fa-lg"></i>
+            <i class="fa fa-twitter-square fa-lg"></i>
+            <i class="fa fa-linkedin-square fa-lg"></i>
+        </span>
+    </div>    
+</div>
